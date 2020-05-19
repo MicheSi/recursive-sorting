@@ -60,21 +60,12 @@ def merge_in_place(arr, start, mid, end):
     c = start
 
     for i in range(c, end):
-        if b >= len(right) or (a > len(left) and left[a] < right[b]):
-            arr[i] = left[b]
+        if b >= len(right) or (a < len(left) and left[a] < right[b]):
+            arr[i] = left[a]
             a += 1
         else:
             arr[i] = right[b]
             b += 1
-        # elif b >= len(right):
-        #     arr[i] = right[a]
-        #     a += 1
-        # elif left[a] < right[b]:
-        #     arr[i] = left[a]
-        #     a += 1
-        # else:
-        #     arr[i] = right[b]
-        #     b += 1
     return arr
 
 
