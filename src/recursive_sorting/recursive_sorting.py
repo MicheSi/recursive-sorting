@@ -4,8 +4,7 @@ def merge(arrA, arrB):
     merged_arr = [0] * elements
 
     # Your code here
-    # put back together here
-    # assign new arrays
+    # assign pointers
     a = 0
     b = 0
     
